@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "here is my tesing backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "start",
+    "start": "node index.js"
+  },
+  "author": "amindu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^9.0.0",
+    "monodb": "^1.5.1"
+  }
+}
