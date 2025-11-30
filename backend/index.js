@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose"
+import messageRouter from "./routes/messageRoutes";
 
 
 const app = express()
@@ -11,3 +12,4 @@ console.log(`Server is running on port ${PORT}`);
 })
 
 
+app.use("/message", messageRouter)
