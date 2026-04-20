@@ -12,3 +12,16 @@ export async function saveMessage(req,res){
         res.status(500).json("Error saving message: " + err)
     })
 }
+
+
+export async function getMessages(req, res){
+
+    try{
+
+        const messages = await Message.find({});
+        res.status(200).json(messages);
+
+    }catch(err){
+        res.status(500).json("Error retrieving messages: " + err)
+    }
+}
