@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <div id="app"></div>
 
-        <script type="text/javascript">
-            const app = document.getElementById('app')
+<body>
 
-            //create a new h1 element 
-            
+    //declarative way of doing things with React
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-        </script>
+     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    </body>
+    <script type="text/jsx">
+        const app = document.getElementById('app');
+        const root = ReactDOM.createRoot(app);
+        root.render(<h1>Develop. Preview. Ship.</h1>);
+    </script>
+
+
+
+
+
+
+    //imperative way of doing things with the DOM
+     <div id="app2"></div>
+    <script type="text/javascript">
+
+        const appi = document.getElementById('app2')
+
+        const description = document.createElement('h2')
+
+        const text2 = 'Hi, this is just a text h2 tag just to learn how the DOM works.'
+
+        const desContent = document.createTextNode(text2)
+
+        description.appendChild(desContent)
+
+        appi.appendChild(description)
+
+    </script>
+
+</body>
+
 </html>
